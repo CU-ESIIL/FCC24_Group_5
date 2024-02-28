@@ -11,7 +11,7 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 
 ## Group Members
 - Member 1: Ryan McCarthy - software engineer at Planet Labs
-- Member 2: Rachel King - data analyst at NCEAS
+- Member 2: Rachel King - data analyst at NCEAS; my favorite tree is the American Beech, *Fagus grandifolia*
 - Member 3: Julia Kent - software engineer at NCAR
 - Member 4: Shike Zhang - PhD student at Umich
 - ...
