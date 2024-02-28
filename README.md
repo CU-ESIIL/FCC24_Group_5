@@ -13,6 +13,7 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 - Member 1: Kit Lewers - Information Science and BioFrontiers PhD student, CU Boulder
 - Member 2: Rachel King - data analyst at NCEAS
 - Member 3: Julia Kent - software engineer at NCAR
+- Member 4: Shike Zhang - PhD student at Umich
 - ...
 - [Link to more detailed bios or profiles if available and desired.]
 
