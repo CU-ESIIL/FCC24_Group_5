@@ -21,9 +21,13 @@ List and describe data sources used, including links to cloud-optimized sources.
 Describe data processing steps taken, the order of scripts, etc.
 
 Once we've gathered our data, the processing steps are to:
+
 1. Filter the NLCD polygons by the Southern Rocky region shapefile profided by the EPA Ecoregions.
+
 2. Merge NLCD polygons into disruption categories. We will identify areas that experienced a single disturbance events of either insects or fires and areas that experienced no disturbance events. Disturbance interactions are too complicated for this short hackathon time frame and are removed for now.
+
 3. Filter our disruption polygon between 9K - 11.5K feet (the high alpine regions) based on our elevation data.
+
 4. Split by forest type.
 
 
@@ -31,8 +35,11 @@ Once we've gathered our data, the processing steps are to:
 Describe steps taken to analyze data and resulting files in team data store file structure.
 
 Once we have our single or zero disturbance type polygons for our high-alpine, Southern Rocky region, we need to:
+
 1. Cross our data with GEDI for aboveground Carbon or biomass estimates.
+
 2. Investigate carbon deltas from before and after each disruption event.
+
 3. Investigate carbon delta variability with forest type.
 
 ## Visualizations
