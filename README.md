@@ -14,7 +14,7 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 - Member 2: Rachel King - data analyst at NCEAS; my favorite tree is the American Beech, *Fagus grandifolia*
 - Member 3: Julia Kent - software engineer at NCAR
 - Member 4: Shike Zhang - PhD student at Umich
-- ...
+- Member 5: Ashley Woolman - forest carbon specialist at Colorado State Forest Service
 - [Link to more detailed bios or profiles if available and desired.]
 
 ## Code Repository Structure
