@@ -28,7 +28,7 @@ Once we've gathered our data, the processing steps are to:
 
 3. Filter our disruption polygon between 9K - 11.5K feet (the high alpine regions) based on our elevation data.
 
-4. Reclassifythe NLCD land cover categories to cover types that meet our research objectives. We kept all forest categories as forested land cover: deciduous, evergreen, and mixed. All other land categories (barren, shrubland, herbaceous, wetland) were reclassified as nonforest. The land cover categories are characterized by the (Multi-Resolution Land Characteristics Consortium (MRCC))[https://www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description]. 
+4. Reclassifythe NLCD land cover categories to cover types that meet our research objectives. We kept all forest categories as forested land cover: deciduous, evergreen, and mixed. All other land categories (barren, shrubland, herbaceous, wetland) were reclassified as nonforest. The land cover categories are characterized by the [Multi-Resolution Land Characteristics Consortium (MRCC)](https://www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description). 
 
 ## Data Analysis
 Describe steps taken to analyze data and resulting files in team data store file structure.
