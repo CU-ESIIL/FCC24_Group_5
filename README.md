@@ -1,12 +1,14 @@
-# [Your Team Name]
+# Tree-mendous Smoulder Squad
 
-Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Earth Lab's Forest Carbon Codefest. This repository is the central hub for our team, encompassing our project overview, team member information, codebase, and more...
+Welcome to the Tree-mendous Smoulder Squad repository, an integral part of ESIIL and Earth Lab's Forest Carbon Codefest. This repository is the central hub for our team, encompassing our project overview, team member information, codebase, and more...
 
 ## Our Project
-[Provide a brief overview of your project here.
+
+The Tree-mendous Smoulder Squad is interested in exploring disruption events in high-altitude forests, specifically insects and wildfires. We will quantify the diversity or forest type before and after each event, and ultimately the affect on carbon storage and sequestration.
+
 
 ## Documentation
-- Access detailed documentation on our [GitHub Pages site](https://your-gh-pages-url/).
+- Access detailed documentation on our [GitHub Pages site](https://cu-esiil.github.io/FCC24_Group_5/).
 
 
 ## Group Members
@@ -15,7 +17,6 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 - Member 3: Julia Kent - software engineer at NCAR
 - Member 4: Shike Zhang - PhD student at Umich
 - Member 5: Ashley Woolman - forest carbon specialist at Colorado State Forest Service
-- [Link to more detailed bios or profiles if available and desired.]
 
 ## Code Repository Structure
 - **Data Processing**: Scripts for cleaning, merging, and managing datasets.
@@ -23,7 +24,7 @@ Welcome to the **[Your Team Name]** repository, an integral part of ESIIL and Ea
 - **Visualization**: Code for creating figures, charts, and interactive visualizations.
 
 ## Meeting Notes and Agendas
-- Regular updates to keep all group members informed and engaged with the project's progress and direction.
+- Regular updates to keep all group members informed and engaged with the project's progress and direction are stored in a [Google Doc](https://docs.google.com/document/d/1-l24tqCLt221C3c6a-MrjtVFxYkiMVV2cUJxMeNJA4s/edit).
 
 ## Contributing to This Repository
 - Contributions from all group members are welcome.
