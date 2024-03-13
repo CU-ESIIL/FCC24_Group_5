@@ -5,7 +5,7 @@ List and describe data sources used, including links to cloud-optimized sources.
 
 1. [National Land Cover Database](https://www.usgs.gov/centers/eros/science/national-land-cover-database) (NLCD) by the USGS, with data from 2001-2019 updated every 2 or 3 years, this is the "the definitive land cover database for the United States." We are using the "Land Cover" map product – Conterminous U.S. land cover at a 30-meter spatial resolution with a 16-class legend based on a modified Anderson Level II classification system . This dataset is used to get ecosystem diagnostics.
 
-2. [Level IV Ecoregions data]([https://www.epa.gov/eco-research/level-iii-and-iv-ecoregions-continental-united-state](https://www.epa.gov/eco-research/ecoregions)s) from the EPA, who defines ecoregions as "areas where ecosystems (and the type, quality, and quantity of environmental resources) are generally similar." Level IV data has a granularity of 967 ecoregions in the conterminous U.S. We use this dataset to define the Southern Rocky region.
+2. [Level IV Ecoregions data](https://www.epa.gov/eco-research/ecoregions) from the EPA, who defines ecoregions as "areas where ecosystems (and the type, quality, and quantity of environmental resources) are generally similar." Level IV data has a granularity of 967 ecoregions in the conterminous U.S. We use this dataset to define the Southern Rocky region.
 
 ![](https://www.epa.gov/sites/default/files/2015-11/eco_level_iv_us_sm.gif)
 
