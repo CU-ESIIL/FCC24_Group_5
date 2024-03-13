@@ -11,13 +11,29 @@ List and describe data sources used, including links to cloud-optimized sources.
 
 - [Landfire (LF)](https://www.landfire.gov/) data is used to quantify oiur disturbance type. The LF program contains 25+ geo-spatial layers, including disturbance dates and types. We are subsetting for wildfire disturbance events. This data exists from 1999-2005.
 
-- [Global Ecosystem Dynamics Investigation (GEDI)](https://gedi.umd.edu/) from the University of Maryland is an project that uses LIDAR from the International Space Station to profile ecosystems by ranging Earth's forests and topography. This dataset contains tree cover and canopy height variables which we will use to make our Carbon-related estimates before and after disturbance events.
+- [Global Ecosystem Dynamics Investigation (GEDI)](https://gedi.umd.edu/) from the University of Maryland is an project that uses LIDAR from the International Space Station to profile ecosystems by ranging Earth's forests and topography. The L4 dataset contains gap-filled tree cover and canopy height variables which we will use to make our Carbon-related estimates before and after disturbance events. This data is only available between 2019 and 2023.
+
+- The R package [`elevatr`](https://cran.r-project.org/web/packages/elevatr/index.html) is used to support terra elevation products from 3 sources: [Amazon Web Services Terrain Tiles](https://registry.opendata.aws/terrain-tiles), [Open Topography Global Datasets API](https://opentopography.org/developers), and [USGS Elevation Point Query Service](https://apps.nationalmap.gov/epqs). Elevation data is used to subset our forest to the high-alpine region.
+
+- NASA's [Moderate Resolution Imaging Spectroradiometer (MODIS)](https://modis.gsfc.nasa.gov/data/dataprod/mod12.php) satellite provides us with percent land cover information. 🛰️
    
 ## Data Processing Steps
 Describe data processing steps taken, the order of scripts, etc.
 
+Once we've gathered our data, the processing steps are to:
+1. Filter the NLCD polygons by the Southern Rocky region shapefile profided by the EPA Ecoregions.
+2. Merge NLCD polygons into disruption categories. We will identify areas that experienced a single disturbance events of either insects or fires and areas that experienced no disturbance events. Disturbance interactions are too complicated for this short hackathon time frame and are removed for now.
+3. Filter our disruption polygon between 9K - 11.5K feet (the high alpine regions) based on our elevation data.
+4. Split by forest type.
+
+
 ## Data Analysis
 Describe steps taken to analyze data and resulting files in team data store file structure.
+
+Once we have our single or zero disturbance type polygons for our high-alpine, Southern Rocky region, we need to:
+1. Cross our data with GEDI for aboveground Carbon or biomass estimates.
+2. Investigate carbon deltas from before and after each disruption event.
+3. Investigate carbon delta variability with forest type.
 
 ## Visualizations
 Describe visualizations created and any specialized techniques or libraries that users should be aware of.
