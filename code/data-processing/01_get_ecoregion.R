@@ -12,7 +12,12 @@ epa_l3 <- glue::glue(
 
 soro_eco_sf <- filter(epa_l3, US_L3NAME == "Southern Rockies")
 
+# write ecoregion code to long-term storage
+st_write(soro_eco_sf, "~/data-store/data/iplant/home/shared/earthlab/forest_carbon_codefest/Team_outputs/Team5/output_data/southern_rockies_eco.shp")
+
+soro_eco_test <- st_read("~/data-store/data/iplant/home/shared/earthlab/forest_carbon_codefest/Team_outputs/Team5/output_data/southern_rockies_eco.shp")
+
 ggplot() + 
-  geom_sf(data = soro_eco_sf) +
+  geom_sf(data = soro_eco_test) +
   theme_bw()
 
