@@ -58,10 +58,15 @@ The effects of disturbances (fire, insect and disease outbreaks) on the trajecto
 a. Filtered for 9,000-11,500 feet in elevation
 <figure>
   <img src="method_image2.png" alt="Map 2" width="600">
-  <figcaption>Map 2: Southern Rockies.</figcaption>
+  <figcaption>Map 2: Elevation map of Southern Rockies.</figcaption>
 </figure>
 </br>
 b. Used NLCD land cover types
+<figure>
+  <img src="method_image3.png" alt="Map 3" width="600">
+  <figcaption>Map 3: Land cover map of Southern Rockies.</figcaption>
+</figure>
+</br>
 3. Identify disturbed areas (wildfire) and undisturbed within last 25 years 
 a. Areas which burned in a wildfire between 2002-2005
 b. Areas with no disturbance between 1999-2020
