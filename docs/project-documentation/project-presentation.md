@@ -39,7 +39,7 @@ While disturbances have always been a part of subalpine forest ecology in the so
 The effects of disturbances (fire, insect and disease outbreaks) on the trajectories of carbon recovery in subalpine forests are not fully understood. This includes how different types of disturbances might alter aboveground carbon storage capacity and the speed of vegetation recovery. Further, there is much variability among subalpine forest types, each with unique species compositions and structural characteristics. Identifying these differences is important for effective forest management and restoration strategies, climate change mitigation and adaptation, understanding carbon budget estimates, and informing policy decisions. 
 
 
-# Rsearch Question
+# Research Question
 
 1. How much land burned from 2002-2005 within our area of interest and study period? And similarly, within our area of interest, how much land has not seen any disturbances (as classified by Landfire)?
 
