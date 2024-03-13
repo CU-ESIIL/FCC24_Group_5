@@ -69,4 +69,14 @@ b. Used NLCD land cover types
 </br>
 3. Identify disturbed areas (wildfire) and undisturbed within last 25 years 
 a. Areas which burned in a wildfire between 2002-2005
+<figure>
+  <img src="method_image4.png" alt="Map 4" width="600">
+  <figcaption>Map 4: red = fire events 2002-2005, blue = 2005-2020 fires.</figcaption>
+</figure>
+</br>
 b. Areas with no disturbance between 1999-2020
+<figure>
+  <img src="method_image5.png" alt="Map 5" width="600">
+  <figcaption>Map 5: gray = no disturbance.</figcaption>
+</figure>
+</br>
