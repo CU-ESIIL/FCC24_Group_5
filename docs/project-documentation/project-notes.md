@@ -14,9 +14,14 @@ How do wildfire and insect outbreaks influence the recovery of aboveground fores
 
 Rationale: Most previous research focusing on post disturbance has focused on low-elevation, ponderosa pine or mixed conifer forests. We chose to look up in elevation towards an area with less research that holds a lot of significance. Spruce fir forests store large amounts of carbon in Colorado and are susceptible to many kinds of insects and disease and wildfire risk.
 
+![Day 1 Notes](FCC5_Day1.jpg)
 
 ## Day 2: March 13, 2024 - CU Boulder
 
 Today we all resolved environment, permissions, and data access issues on cyverse. Grabbed data, filtered, and did other data pre-processing work.
 
+![Day 2 Notes](FCC5_Day2.jpg)
+
 ## Day 3: March 14, 2024 - CU Boulder
+
+Present!
