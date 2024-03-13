@@ -29,8 +29,8 @@ gedi_rast_mask <- terra::mask(x = gedi_rast_crop, soro_eco_6933_vect)
 # make a map of biomass 
 
 ggplot() +
-  tidyterra::geom_spatraster(data = gedi_rast_mask) +
-  geom_sf(data = st_as_sf(soro_eco_6933_vect), fill = NA, color = "black") +
+  tidyterra::geom_spatraster(data = gedi_rast_aea) +
+  # geom_sf(data = st_as_sf(soro_eco_6933_vect), fill = NA, color = "black") +
   scale_fill_viridis_c(
     name = "Biomass (Mg ha<sup>-1</sup>)",
     limits = c(0, 250), na.value = "transparent") +
@@ -46,3 +46,36 @@ ggsave("~/data-store/FCC24_Group_5/code/visualization/gedi_biomass_south_rock.pn
 
 plot(gedi_rast_mask)
 
+# Filter by Elevation and Sum Total BViomass
+
+# read in the elevation raster 
+elev_rast <- rast("soro_elev.tif")
+
+# project gedi data to elev raster
+gedi_rast_aea <- project(gedi_rast_mask, elev_rast)
+
+# filter to elevations above 9k feet and below 11.5k feet (2743.2m, 3505.2m)
+elev_reclass <- clamp(elev_rast, lower = 2743.2, upper = 3505.2, values = FALSE)
+
+gedi_rast_elev_aea <- mask(gedi_rast_aea, elev_reclass)
+
+mgha_to_tot_bio <- function(x) {
+  # total megagrams per cell 
+  # hectares to km2 and divide by cell area (1.4 km2)
+  # 100 hectares / km2 * 1.4 km2
+  (x * 100) * 0.014
+}
+
+gedi_ab <- app(gedi_rast_elev_aea, mgha_to_tot_bio)
+gedi_ab_soro <- app(gedi_rast_mask, function(x) x*100) 
+gedi_ab_soro2 <- app(gedi_rast_aea, mgha_to_tot_bio)
+
+sum(values(gedi_ab, na.rm = TRUE))/1000000  # megagrams to million metric tons 
+
+sum(values(gedi_ab, na.rm = TRUE))/(1000000*2)  # megagrams to million metric tons and C stock
+sum(values(gedi_ab_soro, na.rm = TRUE))/(1000000*2)  # megagrams to million metric tons and C stock
+sum(values(gedi_ab_soro2, na.rm = TRUE))/(1000000*2)  # megagrams to million metric tons and C stock
+
+# 345787216
+
+plot(gedi_rast_elev_aea)
