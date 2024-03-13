@@ -44,3 +44,24 @@ The effects of disturbances (fire, insect and disease outbreaks) on the trajecto
 1. How much land burned from 2002-2005 within our area of interest and study period? And similarly, within our area of interest, how much land has not seen any disturbances (as classified by Landfire)?
 
 2. Within the subalpine forests of the southern Rocky Mountains (9,000-11,500 feet in elevation), how does aboveground carbon differ in areas that burned between 2002-2005 and did have not undergone a disturbance from 1999-2020?
+
+
+# Methods 
+1. Identify area of interest: EPA’s Level 3 Southern Rockies Ecoregion
+
+<figure>
+  <img src="method_image1.png" alt="Map 1" width="600">
+  <figcaption>Map 1: Southern Rockies.</figcaption>
+</figure>
+</br>
+2. Within our ecoregion, identify subalpine forests including spruce-fir/lodgepole pine, and aspen 
+a. Filtered for 9,000-11,500 feet in elevation
+<figure>
+  <img src="method_image2.png" alt="Map 2" width="600">
+  <figcaption>Map 2: Southern Rockies.</figcaption>
+</figure>
+</br>
+b. Used NLCD land cover types
+3. Identify disturbed areas (wildfire) and undisturbed within last 25 years 
+a. Areas which burned in a wildfire between 2002-2005
+b. Areas with no disturbance between 1999-2020
