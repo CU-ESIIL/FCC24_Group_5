@@ -41,4 +41,6 @@ The effects of disturbances (fire, insect and disease outbreaks) on the trajecto
 
 # Rsearch Question
 
-Within the subalpine forests of the southern Rocky Mountains (9,000-11,500 feet in elevation), how does aboveground carbon differ in areas that burned between 2002-2005?
+1. How much land burned from 2002-2005 within our area of interest and study period? And similarly, within our area of interest, how much land has not seen any disturbances (as classified by Landfire)?
+
+2. Within the subalpine forests of the southern Rocky Mountains (9,000-11,500 feet in elevation), how does aboveground carbon differ in areas that burned between 2002-2005 and did have not undergone a disturbance from 1999-2020?
