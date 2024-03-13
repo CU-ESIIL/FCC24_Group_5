@@ -19,3 +19,26 @@ To set the stage, enjoy these beautiful pictures of the high alpine Southern Roc
 For the Souther Rockies region between 2019-2023, here is a map of the GEDI biomass estimate:
 
 <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="GEDI biomass" width="600"/>
+
+# Background
+## Context and Importance
+
+
+High elevation subalpine forests of the southern Rocky Mountains span from 9,000-11,500 feet. Forest types within this elevation gradient include lodgepole pine, Engelmann spruce, subalpine fir, and sometimes quaking aspen. These forests transition to treeless alpine tundra at the highest elevations (over 11,500 feet). 
+
+These forests grow in very harsh conditions but are rather simple in composition and annual productivity is low. 
+Common disturbances in lodgepole pine forests are mountain pine beetles and dwarf mistletoe. Spruce beetles and western spruce budworm impact Engelmann spruce/subalpine fir trees. 
+
+Subalpine forests infrequently burn. The return interval for naturally occurring fires can vary in these forest types. Spruce/fir forests historically are ~300 years, while lodgepole pine can be 150-400 years and require fire to regenerate. 
+
+While disturbances have always been a part of subalpine forest ecology in the southern Rocky Mountains, we know that beetle and wildfire outbreaks have increased, causing widespread tree mortality, affecting forest ecosystem services, and altering forest carbon dynamics. 
+
+# Management
+## Gap in Knowledge
+
+The effects of disturbances (fire, insect and disease outbreaks) on the trajectories of carbon recovery in subalpine forests are not fully understood. This includes how different types of disturbances might alter aboveground carbon storage capacity and the speed of vegetation recovery. Further, there is much variability among subalpine forest types, each with unique species compositions and structural characteristics. Identifying these differences is important for effective forest management and restoration strategies, climate change mitigation and adaptation, understanding carbon budget estimates, and informing policy decisions. 
+
+
+# Rsearch Question
+
+Within the subalpine forests of the southern Rocky Mountains (9,000-11,500 feet in elevation), how does aboveground carbon differ in areas that burned between 2002-2005?
