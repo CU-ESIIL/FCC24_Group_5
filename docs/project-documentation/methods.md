@@ -44,8 +44,21 @@ Once we have our single or zero disturbance type polygons for our high-alpine, S
 ## Visualizations
 Describe visualizations created and any specialized techniques or libraries that users should be aware of.
 
+We will make visualizations of the carbon biomass within the interest of region as well as maps of forest type as a reflection of time since disruption event.
+
 ## Conclusions
 Summary of the full workflow and its outcomes. Reflect on the methods used.
 
 ## References
 Citations of tools, data sources, and other references used.
+
+1. “Ecosystems Research: Ecoregions.” EPA, Environmental Protection Agency, www.epa.gov/eco-research/ecoregions. Accessed 13 Mar. 2024.
+2. Hollister, Jeffrey. Elevatr: Access Elevation Data from Various Apis, Comprehensive R Archive Network (CRAN), 12 Sept. 2023, cran.r-project.org/web/packages/elevatr/index.html. 
+Home Page - Gedi, gedi.umd.edu/. Accessed 13 Mar. 2024. 
+3. “LANDFIRE (LF).” LANDFIRE Program: Home, www.landfire.gov/. Accessed 13 Mar. 2024. 
+4. Modis Land Cover Type/Dynamics, NASA, modis.gsfc.nasa.gov/data/dataprod/mod12.php. Accessed 13 Mar. 2024. 
+5. “National Land Cover Database Active.” National Land Cover Database | U.S. Geological Survey, www.usgs.gov/centers/eros/science/national-land-cover-database. Accessed 13 Mar. 2024. 
+6. National Land Cover Database Class Legend and Description, Multi-Resolution Land Characteristics (MRLC) Consortium, www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description. Accessed 13 Mar. 2024. 
+7. The National Map - Elevation Point Query Service, USGS, apps.nationalmap.gov/epqs/. Accessed 13 Mar. 2024. 
+8. “OpenTopography for Developers.” OpenTopography, opentopography.org/developers. Accessed 13 Mar. 2024. 
+9. “Terrain Tiles.” Terrain Tiles - Registry of Open Data on AWS, registry.opendata.aws/terrain-tiles/. Accessed 13 Mar. 2024. 
