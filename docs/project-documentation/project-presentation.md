@@ -15,11 +15,6 @@ To set the stage, enjoy these beautiful pictures of the high alpine Southern Roc
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/original_6409622c-b99b-42ec-aff2-b0870d097180_PXL_20210815_181251343.jpg" alt="drawing" width="250"/>
 </p>
 
-
-For the Souther Rockies region between 2019-2023, here is a map of the GEDI biomass estimate:
-
-<img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="GEDI biomass" width="600"/>
-
 # Background
 ## Context and Importance
 
@@ -80,3 +75,11 @@ b. Areas with no disturbance between 1999-2020
   <figcaption>Map 5: gray = no disturbance.</figcaption>
 </figure>
 </br>
+
+
+# Results
+
+<figure>
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="Map 5" width="500">
+  <figcaption>Map 6: Souther Rockies GEDI biomass estimate between 2019-2023.</figcaption>
+</figure>
