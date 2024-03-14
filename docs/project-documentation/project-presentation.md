@@ -1,5 +1,14 @@
 # Presentation
 
+## Team Members
+
+ * Julia Kent
+ * Rachel King
+ * Ryan McCarthy
+ * Ashley Woolman
+ * Shike Zhang
+
+
 To set the stage, enjoy these beautiful pictures of the high alpine Southern Rockies taken on the daring mountain bike adventures of Smaulder Squad member Ashley Woolman.
 <p float="left">
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/IMG_0138.jpg" alt="drawing" width="250"/>
@@ -38,6 +47,7 @@ The effects of disturbances (fire, insect and disease outbreaks) on the trajecto
 We utilized five data sources: [EPA L3 Southern Rockies ECO Regions](), [OpenTopography Elevation](https://github.com/jhollist/elevatr), [National Land Cover Database](), [Provided LandFire](), [GEDI L4 Gridded Biomass]().
 
 1. Identify area of interest: EPA’s Level 3 Southern Rockies Ecoregion
+
 <figure>
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image1.png" alt="Map 1" width="500">
   <figcaption>Map 1: Southern Rockies.</figcaption>
@@ -45,16 +55,16 @@ We utilized five data sources: [EPA L3 Southern Rockies ECO Regions](), [OpenTop
 </br>
 
 2. Within our ecoregion, identify subalpine forests including spruce-fir/lodgepole pine, and aspen
-a. Filtered for 9,000-11,500 feet in elevation
-b. Used NLCD land cover types
+  * Filtered for 9,000-11,500 feet in elevation
+  * Used NLCD land cover types
 
 | Map 2 | Map 3|
 |:---|:---|
 |<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image2.png" alt="Map 2"><figcaption>Elevation map of Southern Rockies.</figcaption></figure>|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image3.png" alt="Map 3"><figcaption>Land cover map of Southern Rockies.</figcaption></figure>|
 
 3. Identify disturbed areas (wildfire) and undisturbed within last 25 years 
-a. Areas which burned in a wildfire between 2002-2005
-b. Areas with no disturbance between 1999-2020
+  * Areas which burned in a wildfire between 2002-2005
+  * Areas with no disturbance between 1999-2020
 
 | Map 4 | Map 5 |
 |:----:|:----:|
