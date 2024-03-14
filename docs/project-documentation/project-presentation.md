@@ -1,6 +1,6 @@
 # Presentation
 
-## Team Members
+## Smolder Squad Members
 
  * Julia Kent
  * Rachel King
