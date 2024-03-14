@@ -76,5 +76,19 @@ b. Areas with no disturbance between 1999-2020
 
 <figure>
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="Map 5" width="500">
-  <figcaption>Map 6: Souther Rockies GEDI biomass estimate between 2019-2023.</figcaption>
+  <figcaption>Map 6: Southern Rockies GEDI biomass estimate between 2019-2023.</figcaption>
 </figure>
+
+
+<figure>
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_highelev_fire_32613.png" alt="Map 5" width="500">
+  <figcaption>Map 7: Southern Rockies GEDI biomass with target high elevation fire events.</figcaption>
+</figure>
+
+
+| Total Carbon Biomass | C2 | C3 |
+|:----|:----|:----|
+| 0.1 | 0.1 | 0.1 |
+| 0.1 | 0.1 | 0.1 |
+| 0.1 | 0.1 | 0.1 |
+
