@@ -28,8 +28,10 @@ gedi_rast_mask <- terra::mask(x = gedi_rast_crop, soro_eco_6933_vect)
 
 # make a map of biomass 
 
+
+
 ggplot() +
-  tidyterra::geom_spatraster(data = gedi_rast_aea) +
+  tidyterra::geom_spatraster(data = gedi_rast_32613) +
   # geom_sf(data = st_as_sf(soro_eco_6933_vect), fill = NA, color = "black") +
   scale_fill_viridis_c(
     name = "Biomass (Mg ha<sup>-1</sup>)",
