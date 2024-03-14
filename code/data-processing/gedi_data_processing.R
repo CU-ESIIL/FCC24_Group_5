@@ -89,13 +89,14 @@ high_elev_sf <- st_as_sf(
 high_elev_sf <- high_elev_sf %>% 
   filter(fileab72750c79d == 1)
 
+high_elev_soro_sf <- st_intersection(high_elev_sf, st_transform(soro_eco_sf, st_crs(high_elev_sf)))
  
 
 # Make Map
 
 ggplot() +
   tidyterra::geom_spatraster(data = gedi_rast_aea) +
-  geom_sf(data = high_elev_sf, fill = "grey", color = "white") +
+  geom_sf(data = high_elev_soro_sf, fill = "grey", color = "white") +
   scale_fill_viridis_c(
     name = "Biomass (Mg ha<sup>-1</sup>)",
     limits = c(0, 250), na.value = "transparent") +
@@ -120,20 +121,89 @@ colnames(fire_events_sf)
 fire_events_sf <- fire_events_sf %>% 
   filter(between(Year, 2002, 2005)) 
 
+# create categories for forest cover 
+
+fire_events_sf <- fire_events_sf %>% 
+  mutate(
+    evergreen_cat = ifelse(evergreen_frac > 70, 1, 0),
+    mixed_cat = ifelse(between(mixed_frac, 30, 70), 1, 0),
+    decid_cat = ifelse(deciduous_frac > 70, 1, 0)
+  )
+
+# create polygons of each forest type
+fire_evergreen <- fire_events_sf %>% 
+  filter(evergreen_cat == 1)
+
+fire_decid <- fire_events_sf %>% 
+  filter(decid_cat == 1)
+
+fire_nonforest <- fire_events_sf %>% 
+  filter(nonforest_frac > 0.5)
+
 fire_events_6933 <- st_transform(fire_events_sf, "epsg:6933")
 high_elev_6933 <- st_transform(high_elev_sf, crs = "epsg:6933")
 
+fire_evergreen_6933 <- st_transform(fire_evergreen, "epsg:6933")
+fire_decid_6933 <-st_transform(fire_decid, "epsg:6933")
 
 ggplot() +
   geom_sf(data = high_elev_6933, fill = "white") +
   geom_sf(data = fire_events_6933, fill = "red")
 
+ggplot() +
+  tidyterra::geom_spatraster(data = gedi_rast_aea) +
+  geom_sf(data = high_elev_soro_sf, fill = "grey", color = "white") +
+  scale_fill_viridis_c(
+    name = "Biomass (Mg ha<sup>-1</sup>)",
+    limits = c(0, 250), na.value = "transparent") +
+  theme_void() + 
+  theme(legend.title = element_markdown()) +
+  ggspatial::annotation_north_arrow(
+    pad_y = unit(1, "cm"),
+    which_north = "true"
+  ) + 
+  ggspatial::annotation_scale() 
+
+
 fire_events_high_elev <- fire_events_6933 %>% 
   st_filter(high_elev_6933, .pred = st_intersects)
 
+
+# map of high elevation, burned area and gedi Biomass
+# 32613
+
+high_elev_soro_32613_sf <- st_transform(high_elev_soro_sf, "epsg:32613")
+
+gedi_rast_32613 <- project(gedi_rast_aea, "epsg:32613")
+
+ggplot() +
+  tidyterra::geom_spatraster(data = gedi_rast_32613) +
+  geom_sf(data = high_elev_soro_32613_sf, fill = "grey", color = "white", alpha = 0.5) +
+  geom_sf(data = st_transform(fire_events_high_elev, "epsg:32613"), fill = "red") +
+  scale_fill_viridis_c(
+    name = "Biomass (Mg ha<sup>-1</sup>)",
+    limits = c(0, 250), na.value = "transparent") +
+  theme_void() + 
+  theme(legend.title = element_markdown()) +
+  ggspatial::annotation_north_arrow(
+    pad_y = unit(1, "cm"),
+    which_north = "true"
+  ) + 
+  ggspatial::annotation_scale() 
+
+ggsave("~/data-store/FCC24_Group_5/code/visualization/gedi_biomass_highelev_fire_32613.png", units = "in", width = 6, height = 6)
+
+
+
+fire_decid_aea <- fire_decid_6933 %>%
+  st_filter(high_elev_6933, .pred = st_intersects) %>% 
+  group_by(Event_Type) %>%
+  st_union() %>%
+  st_transform(crs = st_crs(gedi_ab_soro))
+
 no_events_high_elev <- no_events_sf %>% 
   st_transform(crs = "epsg:6933") %>%
-  st_filter(high_elev_6933, .pred = st_intersects)
+  st_intersection(high_elev_6933)
 
 fire_events_high_elev_m <- fire_events_high_elev %>% 
   group_by(Event_Type) %>%
@@ -151,11 +221,17 @@ no_events_rast <- terra::rasterize(no_events_vec, gedi_ab_soro)
 terra::zonal(x = gedi_ab_soro, fire_events_vec, fun = "sum", na.rm = TRUE)
 terra::zonal(x = gedi_ab_soro, no_events_vec, fun = "sum", na.rm = TRUE)
 
+
+
 # 52651.24 Mg 
 # 5.265 million metric tons of C in fire areas
+# 282.1 million metric tons of C in non-fire areas
 
-# 
+# 986.2 km2
+# 42768.6 km2
 
+# 0.00534 million metric tons C / km2 burned area
+# 0.00660 million metric tons C / km2 non burned area
 
 
 
