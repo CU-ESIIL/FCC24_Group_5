@@ -86,7 +86,8 @@ We combined datasets with disturbance events, landcover types, and biomass to co
 biomass and carbon differences in disturbed and undisturbed areas of high-elevation forests in the Southern Rockies. We found that undisturbed regions had higher $C/km^2$ than burned regions, though burned regions experienced significant recovery of C stocks.
 
 Future steps we would take would include:
-  - separating out forest types to examine C recovery in deciduous, evergreen, and mixed forest types
-  - compare additional disturbance events to see how C recovery changes through time in different forest types
-  - examine NPP/GPP changes over time in high-elevation forests
-  - look at multiple disturbance types
+
+ * separating out forest types to examine C recovery in deciduous, evergreen, and mixed forest types
+ * compare additional disturbance events to see how C recovery changes through time in different forest types
+ * examine NPP/GPP changes over time in high-elevation forests
+ * look at multiple disturbance types
