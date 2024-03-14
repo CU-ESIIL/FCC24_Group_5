@@ -13,7 +13,7 @@ List and describe data sources used, including links to cloud-optimized sources.
 
 - [Global Ecosystem Dynamics Investigation (GEDI)](https://gedi.umd.edu/) from the University of Maryland is an project that uses LIDAR from the International Space Station to profile ecosystems by ranging Earth's forests and topography. The L4 dataset contains gap-filled tree cover and canopy height variables which we will use to make our Carbon-related estimates before and after disturbance events. This data is only available between 2019 and 2023.
 
-- The R package [`elevatr`](https://cran.r-project.org/web/packages/elevatr/index.html) is used to support terra elevation products from 3 sources: [Amazon Web Services Terrain Tiles](https://registry.opendata.aws/terrain-tiles), [Open Topography Global Datasets API](https://opentopography.org/developers), and [USGS Elevation Point Query Service](https://apps.nationalmap.gov/epqs). Elevation data is used to subset our forest to the high-alpine region.
+- The R package [`elevatr`](https://cran.r-project.org/web/packages/elevatr/index.html) is used to support terra elevation products from 3 sources: [Amazon Web Services Terrain Tiles](https://registry.opendata.aws/terrain-tiles), [Open Topography Global Datasets API](https://opentopography.org/developers), and [USGS Elevation Point Query Service](https://apps.nationalmap.gov/epqs). Elevation data is used to subset our forest to the high-altitude sub-alpine region.
 
 - NASA's [Moderate Resolution Imaging Spectroradiometer (MODIS)](https://modis.gsfc.nasa.gov/data/dataprod/mod12.php) satellite provides us with percent land cover information. 🛰️
    
@@ -26,7 +26,7 @@ Once we've gathered our data, the processing steps are to:
 
 2. Merge NLCD polygons into disruption categories. We will identify areas that experienced a single disturbance events of either insects or fires and areas that experienced no disturbance events. Disturbance interactions are too complicated for this short hackathon time frame and are removed for now.
 
-3. Filter our disruption polygon between 9K - 11.5K feet (the high alpine regions) based on our elevation data.
+3. Filter our disruption polygon between 9K - 11.5K feet (the sub-alpine regions) based on our elevation data.
 
 4. Reclassifythe NLCD land cover categories to cover types that meet our research objectives. We kept all forest categories as forested land cover: deciduous, evergreen, and mixed. All other land categories (barren, shrubland, herbaceous, wetland) were reclassified as nonforest. The land cover categories are characterized by the [Multi-Resolution Land Characteristics Consortium (MRCC)](https://www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description). 
 
