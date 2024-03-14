@@ -31,21 +31,44 @@ Once we've gathered our data, the processing steps are to:
 4. Reclassifythe NLCD land cover categories to cover types that meet our research objectives. We kept all forest categories as forested land cover: deciduous, evergreen, and mixed. All other land categories (barren, shrubland, herbaceous, wetland) were reclassified as nonforest. The land cover categories are characterized by the [Multi-Resolution Land Characteristics Consortium (MRCC)](https://www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description). 
 
 ## Data Analysis
-Describe steps taken to analyze data and resulting files in team data store file structure.
 
-Once we have our single or zero disturbance type polygons for our high-alpine, Southern Rocky region, we need to:
+Using our polygons for burned and undisturbed regions in the high elevation southern rockies, we then did the following:
 
-1. Cross our data with GEDI for aboveground Carbon or biomass estimates.
+1. Crossed our data with GEDI for aboveground biomass estimates in each region
 
-2. Investigate carbon deltas from before and after each disruption event.
+2. Calculated the total biomass using the area of each region
 
-3. Investigate carbon delta variability with forest type.
+3. Estimated the total C in each region by dividing total biomass by 2, assuming about 50% of the biomass is C
+
 
 ## Visualizations
-Describe visualizations created and any specialized techniques or libraries that users should be aware of.
+
+We created maps showing the target regions with total biomass and highlighted regions with fire events. 
 
 ## Conclusions
-Summary of the full workflow and its outcomes. Reflect on the methods used.
+
+We combined datasets with disturbance events, landcover types, and biomass to compare 
+biomass and carbon differences in disturbed and undisturbed areas of high-elevation forests in the Southern Rockies. 
+
+Future steps we would take would include:
+
+- separating out forest types to examine C recovery in deciduous, evergreen, and mixed forest types
+
+- compare additional disturbance events to see how C recovery changes through time in different forest types
+
+- examine NPP/GPP changes over time in high-elevation forests 
+
+- look at multiple disturbance types
 
 ## References
-Citations of tools, data sources, and other references used.
+
+1. “Ecosystems Research: Ecoregions.” EPA, Environmental Protection Agency, www.epa.gov/eco-research/ecoregions. Accessed 13 Mar. 2024.
+2. Hollister, Jeffrey. Elevatr: Access Elevation Data from Various Apis, Comprehensive R Archive Network (CRAN), 12 Sept. 2023, cran.r-project.org/web/packages/elevatr/index.html. 
+Home Page - Gedi, gedi.umd.edu/. Accessed 13 Mar. 2024. 
+3. “LANDFIRE (LF).” LANDFIRE Program: Home, www.landfire.gov/. Accessed 13 Mar. 2024. 
+4. Modis Land Cover Type/Dynamics, NASA, modis.gsfc.nasa.gov/data/dataprod/mod12.php. Accessed 13 Mar. 2024. 
+5. “National Land Cover Database Active.” National Land Cover Database | U.S. Geological Survey, www.usgs.gov/centers/eros/science/national-land-cover-database. Accessed 13 Mar. 2024. 
+6. National Land Cover Database Class Legend and Description, Multi-Resolution Land Characteristics (MRLC) Consortium, www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description. Accessed 13 Mar. 2024. 
+7. The National Map - Elevation Point Query Service, USGS, apps.nationalmap.gov/epqs/. Accessed 13 Mar. 2024. 
+8. “OpenTopography for Developers.” OpenTopography, opentopography.org/developers. Accessed 13 Mar. 2024. 
+9. “Terrain Tiles.” Terrain Tiles - Registry of Open Data on AWS, registry.opendata.aws/terrain-tiles/. Accessed 13 Mar. 2024. 
