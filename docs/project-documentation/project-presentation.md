@@ -1,6 +1,6 @@
 # Presentation
 
-## Smolder Squad Members
+## Tree-mendous Smolder Squad Members
 
  * Julia Kent
  * Rachel King
