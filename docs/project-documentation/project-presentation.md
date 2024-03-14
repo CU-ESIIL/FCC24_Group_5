@@ -50,33 +50,33 @@ The effects of disturbances (fire, insect and disease outbreaks) on the trajecto
 1. Identify area of interest: EPA’s Level 3 Southern Rockies Ecoregion
 
 <figure>
-  <img src="method_image1.png" alt="Map 1" width="600">
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image1.png" alt="Map 1" width="600">
   <figcaption>Map 1: Southern Rockies.</figcaption>
 </figure>
 </br>
 2. Within our ecoregion, identify subalpine forests including spruce-fir/lodgepole pine, and aspen 
 a. Filtered for 9,000-11,500 feet in elevation
 <figure>
-  <img src="method_image2.png" alt="Map 2" width="600">
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image2.png" alt="Map 2" width="600">
   <figcaption>Map 2: Elevation map of Southern Rockies.</figcaption>
 </figure>
 </br>
 b. Used NLCD land cover types
 <figure>
-  <img src="method_image3.png" alt="Map 3" width="600">
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image3.png" alt="Map 3" width="600">
   <figcaption>Map 3: Land cover map of Southern Rockies.</figcaption>
 </figure>
 </br>
 3. Identify disturbed areas (wildfire) and undisturbed within last 25 years 
 a. Areas which burned in a wildfire between 2002-2005
 <figure>
-  <img src="method_image4.png" alt="Map 4" width="600">
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image4.png" alt="Map 4" width="600">
   <figcaption>Map 4: red = fire events 2002-2005, blue = 2005-2020 fires.</figcaption>
 </figure>
 </br>
 b. Areas with no disturbance between 1999-2020
 <figure>
-  <img src="method_image5.png" alt="Map 5" width="600">
+  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image5.png" alt="Map 5" width="600">
   <figcaption>Map 5: gray = no disturbance.</figcaption>
 </figure>
 </br>
