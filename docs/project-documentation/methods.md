@@ -9,7 +9,7 @@ List and describe data sources used, including links to cloud-optimized sources.
 
 ![](https://www.epa.gov/sites/default/files/2015-11/eco_level_iv_us_sm.gif)
 
-- [Landfire (LF)](https://www.landfire.gov/) data is used to quantify oiur disturbance type. The LF program contains 25+ geo-spatial layers, including disturbance dates and types. We are subsetting for wildfire disturbance events. This data exists from 1999-2005.
+- [Landfire (LF)](https://www.landfire.gov/) data is used to quantify our disturbance type. The LF program contains 25+ geo-spatial layers, including disturbance dates and types. We are subsetting for wildfire disturbance events. This data exists from 1999-2005.
 
 - [Global Ecosystem Dynamics Investigation (GEDI)](https://gedi.umd.edu/) from the University of Maryland is an project that uses LIDAR from the International Space Station to profile ecosystems by ranging Earth's forests and topography. The L4 dataset contains gap-filled tree cover and canopy height variables which we will use to make our Carbon-related estimates before and after disturbance events. This data is only available between 2019 and 2023.
 
