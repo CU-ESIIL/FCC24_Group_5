@@ -1,9 +1,3 @@
-# Project presentation overview
-
-All project presentation materials should be made available on this page.
-
-Your team may present directly from this page if you would like to; alternatively, if you would prefer to use slides to present, please make sure to export your team's slides as a PDF, add them to your GitHub, and add the link to that PDF here below.
-
 # Presentation
 
 To set the stage, enjoy these beautiful pictures of the high alpine Southern Rockies taken on the daring mountain bike adventures of Smaulder Squad member Ashley Woolman.
@@ -15,9 +9,8 @@ To set the stage, enjoy these beautiful pictures of the high alpine Southern Roc
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/original_6409622c-b99b-42ec-aff2-b0870d097180_PXL_20210815_181251343.jpg" alt="drawing" width="250"/>
 </p>
 
-# Background
-## Context and Importance
-
+## Background
+### Context and Importance
 
 High elevation subalpine forests of the southern Rocky Mountains span from 9,000-11,500 feet. Forest types within this elevation gradient include lodgepole pine, Engelmann spruce, subalpine fir, and sometimes quaking aspen. These forests transition to treeless alpine tundra at the highest elevations (over 11,500 feet). 
 
@@ -28,20 +21,22 @@ Subalpine forests infrequently burn. The return interval for naturally occurring
 
 While disturbances have always been a part of subalpine forest ecology in the southern Rocky Mountains, we know that beetle and wildfire outbreaks have increased, causing widespread tree mortality, affecting forest ecosystem services, and altering forest carbon dynamics. 
 
-# Management
-## Gap in Knowledge
+### Gap in Knowledge
 
 The effects of disturbances (fire, insect and disease outbreaks) on the trajectories of carbon recovery in subalpine forests are not fully understood. This includes how different types of disturbances might alter aboveground carbon storage capacity and the speed of vegetation recovery. Further, there is much variability among subalpine forest types, each with unique species compositions and structural characteristics. Identifying these differences is important for effective forest management and restoration strategies, climate change mitigation and adaptation, understanding carbon budget estimates, and informing policy decisions. 
 
 
-# Research Question
+## Research Questions
 
 1. How much land burned from 2002-2005 within our area of interest and study period? And similarly, within our area of interest, how much land has not seen any disturbances (as classified by Landfire)?
 
 2. Within the subalpine forests of the southern Rocky Mountains (9,000-11,500 feet in elevation), how does aboveground carbon differ in areas that burned between 2002-2005 and did have not undergone a disturbance from 1999-2020?
 
 
-# Methods 
+## Methods 
+
+We utilized five data sources: [EPA L3 Southern Rockies ECO Regions](), [OpenTopography Elevation](https://github.com/jhollist/elevatr), [National Land Cover Database](), [Provided LandFire](), [GEDI L4 Gridded Biomass]().
+
 1. Identify area of interest: EPA’s Level 3 Southern Rockies Ecoregion
 
 <figure>
@@ -77,7 +72,7 @@ b. Areas with no disturbance between 1999-2020
 </br>
 
 
-# Results
+## Results
 
 <figure>
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="Map 5" width="500">
