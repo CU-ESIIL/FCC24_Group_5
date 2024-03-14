@@ -38,57 +38,48 @@ The effects of disturbances (fire, insect and disease outbreaks) on the trajecto
 We utilized five data sources: [EPA L3 Southern Rockies ECO Regions](), [OpenTopography Elevation](https://github.com/jhollist/elevatr), [National Land Cover Database](), [Provided LandFire](), [GEDI L4 Gridded Biomass]().
 
 1. Identify area of interest: EPA’s Level 3 Southern Rockies Ecoregion
-
 <figure>
   <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image1.png" alt="Map 1" width="500">
   <figcaption>Map 1: Southern Rockies.</figcaption>
 </figure>
 </br>
-2. Within our ecoregion, identify subalpine forests including spruce-fir/lodgepole pine, and aspen 
+
+2. Within our ecoregion, identify subalpine forests including spruce-fir/lodgepole pine, and aspen
 a. Filtered for 9,000-11,500 feet in elevation
-<figure>
-  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image2.png" alt="Map 2" width="500">
-  <figcaption>Map 2: Elevation map of Southern Rockies.</figcaption>
-</figure>
-</br>
 b. Used NLCD land cover types
-<figure>
-  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image3.png" alt="Map 3" width="500">
-  <figcaption>Map 3: Land cover map of Southern Rockies.</figcaption>
-</figure>
-</br>
+
+| Map 2 | Map 3|
+|:---|:---|
+|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image2.png" alt="Map 2"><figcaption>Elevation map of Southern Rockies.</figcaption></figure>|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image3.png" alt="Map 3"><figcaption>Land cover map of Southern Rockies.</figcaption></figure>|
+
 3. Identify disturbed areas (wildfire) and undisturbed within last 25 years 
 a. Areas which burned in a wildfire between 2002-2005
-<figure>
-  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image4.png" alt="Map 4" width="500">
-  <figcaption>Map 4: red = fire events 2002-2005, blue = 2005-2020 fires.</figcaption>
-</figure>
-</br>
 b. Areas with no disturbance between 1999-2020
-<figure>
-  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image5.png" alt="Map 5" width="500">
-  <figcaption>Map 5: gray = no disturbance.</figcaption>
-</figure>
-</br>
 
+| Map 4 | Map 5 |
+|:----:|:----:|
+|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image4.png" alt="Map 4"><figcaption>red = fire events 2002-2005, blue = 2005-2020 fires.</figcaption></figure>|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/docs/project-documentation/method_image5.png" alt="Map 5"><figcaption>gray = no disturbance.</figcaption></figure>|
 
 ## Results
 
-<figure>
-  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="Map 5" width="500">
-  <figcaption>Map 6: Southern Rockies GEDI biomass estimate between 2019-2023.</figcaption>
-</figure>
+| Map 6 | Map 7 |
+|:----:|:----:|
+|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_south_rock.png" alt="Map 6"><figcaption>Southern Rockies GEDI biomass estimate between 2019-2023.</figcaption></figure>|<figure><img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_highelev_fire_32613.png" alt="Map 7"><figcaption>Southern Rockies GEDI biomass with target high elevation fire events.</figcaption></figure>|
 
+Table 1: Land area ($km^2$) that burned between 2002-2005 and underwent no disturbance during out study period within the Southern Rockies Ecoregion.
 
-<figure>
-  <img src="https://raw.githubusercontent.com/CU-ESIIL/FCC24_Group_5/main/code/visualization/gedi_biomass_highelev_fire_32613.png" alt="Map 5" width="500">
-  <figcaption>Map 7: Southern Rockies GEDI biomass with target high elevation fire events.</figcaption>
-</figure>
+| | Area $km^2$ | Carbon $TMT/km^2$ |
+|:----|:----:|:----:|
+| Burned 2002-2005 | 1233.56 | 2.67 |
+| No disturbance during study period | 122,704.31 | 3.30 |
 
+## Conclusions
 
-| Total Carbon Biomass | C2 | C3 |
-|:----|:----|:----|
-| 0.1 | 0.1 | 0.1 |
-| 0.1 | 0.1 | 0.1 |
-| 0.1 | 0.1 | 0.1 |
+We combined datasets with disturbance events, landcover types, and biomass to compare
+biomass and carbon differences in disturbed and undisturbed areas of high-elevation forests in the Southern Rockies. We found that undisturbed regions had higher $C/km^2$ than burned regions, though burned regions experienced significant recovery of C stocks.
 
+Future steps we would take would include:
+  - separating out forest types to examine C recovery in deciduous, evergreen, and mixed forest types
+  - compare additional disturbance events to see how C recovery changes through time in different forest types
+  - examine NPP/GPP changes over time in high-elevation forests
+  - look at multiple disturbance types
